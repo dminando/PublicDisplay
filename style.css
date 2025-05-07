@@ -22,7 +22,7 @@
 body { 
     background-color: #f0f0f0; /* Light gray background */
     font-family: 'Courier New'; /* my favorite font */
-    margin: 0; /* Remove default body margin */
+    margin: 0px; /* Remove default body margin */
     padding: 20px; /* Add some padding around the content */
     text-align: center;
 }
@@ -30,6 +30,7 @@ body {
 h1 {
     color: #333; /* Dark gray heading text */
     text-align: center; /* Center the heading */
+    margin-bottom: 40px;
    
 }
 
