@@ -1,0 +1,16 @@
+
+body { 
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: sans-serif; /* A readable sans-serif font */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding around the content */
+}
+
+h1 {
+    color: #333; /* Dark gray heading text */
+    text-align: center; /* Center the heading */
+}
+
+p {
+    line-height: 1.6; /* Improve readability of paragraphs */
+}
