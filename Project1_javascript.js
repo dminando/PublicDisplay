@@ -1,3 +1,19 @@
+
+// this is to define the cursor on an axis in reference to the hover effect
+const syncPointer = ({ x: pointerX, y: pointerY }) => {
+    const x = pointerX.toFixed(2)
+    const y = pointerY.toFixed(2)
+    const xp = (pointerX / window.innerWidth).toFixed(2)
+    const yp = (pointerY / window.innerHeight).toFixed(2)
+    document.documentElement.style.setProperty('--x', x)
+    document.documentElement.style.setProperty('--xp', xp)
+    document.documentElement.style.setProperty('--y', y)
+    document.documentElement.style.setProperty('--yp', yp)
+  }
+  document.body.addEventListener('pointermove', syncPointer)
+
+
+
 Var = quotes = [
     'Your attitude, not your aptitude, determines your altitude ~ Zig Ziglar',
     'A man\'s worth is determined by how much truth he can tolerate... ~ Friedrich Nietzsche',
@@ -27,3 +43,4 @@ function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
+
