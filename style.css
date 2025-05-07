@@ -1,9 +1,10 @@
 
 body { 
     background-color: #f0f0f0; /* Light gray background */
-    font-family: sans-serif; /* A readable sans-serif font */
+    font-family: 'Courier New'; /* my favorite font */
     margin: 0; /* Remove default body margin */
     padding: 20px; /* Add some padding around the content */
+    text-align: center;
 }
 
 h1 {
@@ -13,4 +14,15 @@ h1 {
 
 p {
     line-height: 1.6; /* Improve readability of paragraphs */
+}
+
+#quoteDisplay { 
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button { 
+    margin-left: auto;
+    margin-right: auto;
 }
