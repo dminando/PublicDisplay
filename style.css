@@ -1,3 +1,8 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
 
 :root {
 	--x: 0;
@@ -25,10 +30,12 @@ body {
 h1 {
     color: #333; /* Dark gray heading text */
     text-align: center; /* Center the heading */
+   
 }
 
 p {
     line-height: 1.6; /* Improve readability of paragraphs */
+    
 }
 
 #quoteDisplay { 
@@ -38,7 +45,10 @@ p {
 }
 
 /* this adds the glowing hover effect to the button */
-#button { 
+
+
+button { 
+    margin-top: 40px;
     border-radius: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -55,17 +65,22 @@ p {
 	touch-action: none;
 	position: relative;
 	padding: 1rem 2rem;
+    
+  
+    
 }
-
 button::before {
-	content: "";
-	position: absolute;
+	content: "New Quote";  /* add your text here */
+	position: center;
 	inset: 0;
 	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
 	background: var(--bg);
 	z-index: 2;
 	border-radius: 1rem;
+    color: rgba(0, 204, 255, 0.497);
 }
+
+
 button span {
 	background: var(--glow), black;
 	background-clip: text;
@@ -75,16 +90,19 @@ button span {
 	z-index: 2;
 	position: relative;
 	inset: 0;
+
 }
 :root:has(button:active) {
 	--size: 300px;
 }
 button::after {
-	content: "";
+	content: "New Quote";    /* add your text here */
 	position: absolute;
 	inset: -4px;
 	filter: blur(20px);
 	border: 4px solid transparent;
 	background: var(--glow);
 	border-radius: 1rem;
+    
 }
+    
