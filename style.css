@@ -43,11 +43,17 @@ p {
     width: 80%; 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
+#quoteAuthor { 
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* this adds the glowing hover effect to the button */
-
-
 button { 
     margin-top: 40px;
     border-radius: 1rem;
@@ -71,7 +77,6 @@ button {
     
 }
 button::before {
-	content: "New Quote";  /* add your text here */
 	position: center;
 	inset: 0;
 	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
@@ -83,7 +88,7 @@ button::before {
 
 
 button span {
-	background: var(--glow), black;
+	background: var(--glow), linear-gradient(90deg, #00ccff);
 	background-clip: text;
 	color: transparent;
 	height: 100%;
@@ -91,13 +96,12 @@ button span {
 	z-index: 2;
 	position: relative;
 	inset: 0;
-
+    transition: background 0.24s;
 }
 :root:has(button:active) {
 	--size: 300px;
 }
 button::after {
-	content: "New Quote";    /* add your text here */
 	position: absolute;
 	inset: -4px;
 	filter: blur(20px);
